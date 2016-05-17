@@ -3,6 +3,10 @@
 require 'sinatra'
 require 'strans-client'
 
+get '/' do
+  erb :index
+end
+
 get '/linhas.json' do
   client = StransClient.new('luanpontes2@gmail.com', 'naul1991', '49ea6f5525a34e71bdd7b4f8a92adaac')
   client.autentic

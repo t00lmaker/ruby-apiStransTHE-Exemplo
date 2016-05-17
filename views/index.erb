@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style type="text/css">
+  body { text-align:center;font-family:helvetica,arial;font-size:22px;
+    color:#888 ;margin:20px}
+  #c {margin:0 auto;width:500px;text-align:left}
+  h4{ color : #000}
+  </style>
+</head>
+<body>
+  <h2>Proxy Para Api da Strans Teresina</h2>
+  <img src='http://localhost:4567/__sinatra__/404.png'>
+
+  <div id="c">
+    <h4>GET /linhas.json</h4>
+    <p>
+      Retorna todas as linhas cadastradas.
+    </p>
+
+    <h4>GET /linhas.json?busca=ininga</h4>
+    <p>
+      Retorna todas as linhas que possuam o termo “ininga” na denominação, no ponto de origem ou ponto de retorno.
+    </p>
+
+    <h4>GET /paradas.json</h4>
+    <p>
+      Retorna todas as paradas cadastradas.
+    </p>
+
+    <h4>GET /paradas.json?busca=ininga</h4>
+    <p>Retorna todas as paradas que possuam o termo “ininga” na denominação ou no endereço.</p>
+
+    <h4>GET /paradasLinha.json?busca=0402</h4>
+    <p>Retorna todas as paradas da linha indicada.</p>
+
+    <h4>GET /veiculos.json</h4>
+    <p>Retorna a localização de todos veículos por linhas, na última atualização de dados.</p>
+
+    <h4>GET /veiculosLinha.json?busca=0618</h4>
+    <p>
+      Retorna a localização dos veículos em uma dada linha, na última atualização de dados.
+    </p>
+
+    <h2>Ps. : nil = null = vazio </h2>
+
+</body>
+</html>
