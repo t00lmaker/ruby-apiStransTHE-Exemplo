@@ -2,6 +2,7 @@
 
 require 'sinatra'
 require 'strans-client'
+require 'json'
 
 get '/' do
   erb :index
@@ -10,13 +11,13 @@ end
 get '/linhas.json' do
   client = StransClient.new('luanpontes2@gmail.com', 'naul1991', '49ea6f5525a34e71bdd7b4f8a92adaac')
   client.autentic
-  client.linhas(params[:busca]).to_s
+  client.linhas(params[:busca]).to_json
 end
 
 get '/paradas.json' do
   client = StransClient.new('luanpontes2@gmail.com', 'naul1991', '49ea6f5525a34e71bdd7b4f8a92adaac')
   client.autentic
-  client.paradas(params[:busca]).to_s
+  client.paradas(params[:busca]).to_json
 end
 
 get '/paradasLinha.json' do
@@ -26,14 +27,14 @@ get '/paradasLinha.json' do
   else
     client = StransClient.new('luanpontes2@gmail.com', 'naul1991', '49ea6f5525a34e71bdd7b4f8a92adaac')
     client.autentic
-    client.paradas_linha(params[:busca]).to_s
+    client.paradas_linha(params[:busca]).to_json
   end
 end
 
 get '/veiculos.json' do
   client = StransClient.new('luanpontes2@gmail.com', 'naul1991', '49ea6f5525a34e71bdd7b4f8a92adaac')
   client.autentic
-  client.veiculos().to_s
+  client.veiculos().to_json
 end
 
 get '/veiculosLinha.json' do
@@ -43,6 +44,6 @@ get '/veiculosLinha.json' do
   else
     client = StransClient.new('luanpontes2@gmail.com', 'naul1991', '49ea6f5525a34e71bdd7b4f8a92adaac')
     client.autentic
-    client.veiculos_linha(params[:busca]).to_s
+    client.veiculos_linha(params[:busca]).to_json
   end
 end
