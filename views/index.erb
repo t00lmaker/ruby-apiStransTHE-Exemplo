@@ -10,10 +10,13 @@
   </style>
 </head>
 <body>
-  <h2>Proxy Para Api da Strans Teresina</h2>
+  <h2>
+    <a href="https://inthegra.strans.teresina.pi.gov.br/docs">Api Inthegra</a>
+    for /GET
+  </h2>
   <img src='http://www.sinatrarb.com/images/logo.png'>
-
   <div id="c">
+
     <h4><a href="/linhas.json">GET /linhas.json</a></h4>
     <p>
       Retorna todas as linhas cadastradas.
@@ -32,7 +35,7 @@
     <h4><a href="/paradas.json?busca=ininga">GET /paradas.json?busca=ininga</a></h4>
     <p>Retorna todas as paradas que possuam o termo “ininga” na denominação ou no endereço.</p>
 
-    <h4><a href="/paradasLinha.json?busca=0402">GET /paradasLinha.json?busca=0402</h4>
+    <h4><a href="/paradasLinha.json?busca=0402">GET /paradasLinha.json?busca=0402</a></h4>
     <p>Retorna todas as paradas da linha indicada.</p>
 
     <h4><a href="/veiculos.json">GET /veiculos.json</a></h4>
@@ -43,7 +46,11 @@
       Retorna a localização dos veículos em uma dada linha, na última atualização de dados.
     </p>
 
-    <h2>Ps. : nil = null = vazio </h2>
-
-</body>
+  </body>
+  <br>
+  <br>
+  <p style="font-size: 18px; text-align:center">
+    Feito com amor e com o <a href="http://www.sinatrarb.com/">Sinatra</a> por EqualsP ( =P )
+  </p>
+  <br>
 </html>
