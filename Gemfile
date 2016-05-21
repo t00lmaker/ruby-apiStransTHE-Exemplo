@@ -2,4 +2,4 @@
 source "https://rubygems.org"
 
 gem "sinatra"
-gem "strans-client"
+gem "strans-client", '1.1.0.pre.rc4'
