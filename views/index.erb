@@ -46,11 +46,26 @@
       Retorna a localização dos veículos em uma dada linha, na última atualização de dados.
     </p>
 
+    <h3>Metodos Adicionais</h3>
+
+    <h4><a href="/paradasProximas.json?lat=-5.119073&long=-42.793782&dist=50">
+      GET /paradasProximas.json?lat=-5.119073&long=-42.793782&dist=50</a></h4>
+    <p>
+      Retorna as paradas a um raio de distancia da localização passada. Por exemplo,
+      a chamada acima retorna as paradas a um raio de 50 metros da localização de
+      Latitude '-5.119073' e Longitude '-42.793782'.
+    </p>
+
+    <h4><a href="/linhasParada.json?codigoParada=355">
+      GET /linhasParada.json?codigoParada=355</a></h4>
+    <p>
+      Retorna as as linhas que passam na parada especificada no parametro codigoParada.
+    </p>
   </body>
   <br>
   <br>
   <p style="font-size: 18px; text-align:center">
-    Feito com amor e com o <a href="http://www.sinatrarb.com/">Sinatra</a> por EqualsP ( =P )
+    Feito por EqualsP com amor e com o <a href="http://www.sinatrarb.com/">Sinatra</a> 
   </p>
   <br>
 </html>

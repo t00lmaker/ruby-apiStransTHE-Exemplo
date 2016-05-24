@@ -1,6 +1,6 @@
 
 require "singleton"
-require "lazy_strans_client"
+require "lazy-strans-client"
 
 
 #Simples Singleton para garantir
